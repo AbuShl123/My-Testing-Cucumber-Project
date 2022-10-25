@@ -15,10 +15,10 @@ public class Driver {
             switch (browser) {
                 case "chrome" :
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver(); break;
                 case "edge" :
                     WebDriverManager.edgedriver().setup();
-                    driver = new EdgeDriver();
+                    driver = new EdgeDriver(); break;
             }
 
             driver.manage().window().maximize();
